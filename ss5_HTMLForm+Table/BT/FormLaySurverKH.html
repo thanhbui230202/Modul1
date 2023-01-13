@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    textarea{
+        resize: none;
+    }
+    select{
+        width: 300px;
+    }
+    #money1{
+        width: 100px;
+    }
+    #money2{
+        width: 30px;
+    }
+    .title{
+        text-align: left;
+        font-weight: bold;
+    }
+    .hang1{
+        font-weight: normal;
+        text-align: center;
+    }
+    .question{
+        font-weight: bold;
+    }
+    tr:nth-child(odd) {
+        background-color: #dddddd;
+    }
+    td{
+        text-align: center;
+    }
+</style>
+<body>
+<form action="FormLaySurverKH.html" method="post">
+    <textarea id="tieude" name="tieude" rows="2" cols="100">Market Research Survey
+        Please take a few moments to complete this satisfaction survey
+    </textarea>
+    <p class="question">What is your age range?</p>
+    <select>
+        <option>10-18</option>
+        <option selected>18-24</option>
+        <option>24-30</option>
+    </select>
+    <p class="question">What is your yearly income range?</p>
+    <select>
+        <option selected>$0 - $25,000</option>
+    </select>
+    <p class="question">Gender</p>
+    <input type="radio" name="gender">Male<br>
+    <input type="radio" name="gender">Female
+    <p class="question">Which of the following products have your purchase in the last 2 months.Please check all that apply</p>
+    <input type="checkbox" name="product"> Product 1 <br>
+    <input type="checkbox" name="product"> Product 2 <br>
+    <input type="checkbox" name="product"> Product 3
+    <p class="question">How often do you use our new product?</p>
+    <input type="radio" name="time">Daily<br>
+    <input type="radio" name="time">Weekly<br>
+    <input type="radio" name="time">Monthly
+    <p class="question">What would you pay for the new product?</p>
+    <table>
+        <tr>
+            <td>$</td>
+            <td><input type="number" name="money" id="money1"></td>
+            <td>.</td>
+            <td><input type="number" name="money" id="money2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Dollar</td>
+            <td></td>
+            <td>Cents</td>
+        </tr>
+    </table>
+    <p class="question">What futures would you like to see in the new product.</p>
+    <textarea rows="7" cols="100"></textarea>
+    <p class="question">Please rate you level of agreement with the following statements</p>
+    <table border="1">
+        <tr class="hang1">
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <td class="title">Our products are priced fairly.</td>
+            <td><input type="radio"><br>1</td>
+            <td><input type="radio"><br>2</td>
+            <td><input type="radio"><br>3</td>
+            <td><input type="radio"><br>4</td>
+        </tr>
+        <tr>
+            <td class="title">Our products are high quality.</td>
+            <td><input type="radio"><br>1</td>
+            <td><input type="radio"><br>2</td>
+            <td><input type="radio"><br>3</td>
+            <td><input type="radio"><br>4</td>
+        </tr>
+        <tr>
+            <td class="title">You would recommend our product to a friend or coworker</td>
+            <td><input type="radio"><br>1</td>
+            <td><input type="radio"><br>2</td>
+            <td><input type="radio"><br>3</td>
+            <td><input type="radio"><br>4</td>
+        </tr>
+    </table><br>
+    <input type="button" name="btnSubmit" value="Submit">
+</form>
+</body>
+</html>

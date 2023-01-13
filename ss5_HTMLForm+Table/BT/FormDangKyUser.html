@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng ký người dùng</title>
+</head>
+<style>
+    .input{
+        display: inline;
+    }
+</style>
+<body>
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+<!--    <p>Họ và tên</p>-->
+<!--    <label for="input" ><input type="text" name="name" id="input"></label>-->
+<!--    <p>Email:</p>-->
+<!--    <label><input type="email" name="email" id="input1"></label>-->
+<!--    <p>Số điện thoại:</p>-->
+<!--    <label><input type="number" name="phone" id="input2"></label>-->
+<!--    <p>Giới tính:</p>-->
+<!--    <label>-->
+<!--        <input type="radio" name="gender" checked class="input">Nam-->
+<!--        <input type="radio" name="gender" class="input">Nữ<br>-->
+<!--    </label>-->
+<!--    <input type="button" name="btnDangky" value="Đăng kí">-->
+    <table>
+        <tr>
+            <td colspan="2">
+                Họ và tên:<br>
+                <input type="text" name="name">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Email:<br>
+                <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Số điện thoại:<br>
+                <input type=number" name="phone">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Giới tính:<br>
+                <input type="radio" name="gender" checked>Nam
+                <input type="radio" name="gender">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="btnDangky" value="Đăng kí">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

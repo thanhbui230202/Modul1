@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormDonGian</title>
+</head>
+<style>
+    .div1{
+        background: white;
+        /*display: inline-block;*/
+    }
+    .div2{
+        padding: 10px;
+        width: 343px;
+        background: paleturquoise;
+    }
+    .title{
+        text-align: center;
+        color: white;
+        background: orangered;
+    }
+    .sothich{
+        color: orangered;
+
+    }
+    .a{
+        color: blue;
+    }
+    .b{
+        color: blue;
+        display: inline;
+    }
+    #hobby1{
+        margin-left: 10px;
+    }
+    #hobby2{
+        margin-left: 15px;
+    }
+    .form{
+        display: inline-block;
+    }
+
+    .div3{
+        background: turquoise;
+        width: 320px;
+    }
+    .noidung{
+        color: blue;
+    }
+    #address{
+        height: 60px;
+    }
+    #diachi{
+        display: inline;
+    }
+    #tieude{
+        /*width: 620px;*/
+        background: orange;
+        padding: 10px;
+        text-align: left;
+    }
+</style>
+<body>
+<div class="div2">
+    <div class="div1">
+        <form action="FormDonGian.html" method="post" class="form">
+            <table>
+                <caption class="title" >SỞ THÍCH CỦA BẠN</caption>
+                <tr>
+                    <td class="a">Họ và tên</td>
+                    <td>
+                        <input type="text" name="hoten" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="a">Email</td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="b">Sở thích</td>
+                    <td class="sothich">
+                        <input type="checkbox" id="hobby" name="thethao" value="thethao">
+                        <label for="hobby"> Thể thao</label>
+                        <input type="checkbox" id="hobby1" name="thethao" value="thethao">
+                        <label for="hobby1"> Âm nhạc</label>
+                        <input type="checkbox" id="hobby2" name="thethao" value="thethao">
+                        <label for="hobby2"> Đọc sách</label><br>
+                        <input type="checkbox" id="hobby3" name="thethao" value="thethao">
+                        <label for="hobby3"> Lướt web</label>
+                        <input type="checkbox" id="hobby4" name="thethao" value="thethao">
+                        <label for="hobby4"> Chơi game</label>
+                        <input type="checkbox" id="hobby5" name="thethao" value="thethao">
+                        <label for="hobby5"> Điện ảnh</label><br>
+                        <input type="checkbox" id="hobby6" name="thethao" value="thethao">
+                        <label for="hobby6"> Du lịch</label><br>
+                    </td>
+                </tr>
+                <th>
+                <td>
+                    <input type="button" name="btnGuitt" value="Gửi thông tin">
+                    <input type="button" name="btnNhaplai" value="Nhập lại">
+                </td>
+                </th>
+            </table>
+        </form>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="div3">
+    <form action="FormDonGian_P2.html" method="post" class="form">
+        <table>
+            <tr>
+                <td class="noidung" id="tieude" colspan="2"><b> ĐĂNG KÝ HỌC VIÊN </b></td>
+            </tr>
+            <tr>
+                <td class="noidung">Họ và tên</td>
+                <td>
+                    <input type="text" name="name" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td class="noidung">Ngày sinh</td>
+                <td>
+                    <input type="number" name="ngaysinh">
+                </td>
+            </tr>
+            <tr>
+                <td class="noidung">Giới tính</td>
+                <td>
+                    <input type="radio" name="rd" checked>Nam
+                    <input type="radio" name="rd">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td class="noidung" id="diachi">Địa chỉ</td>
+                <td>
+                    <input type="text" name="diachi" id="address">
+                </td>
+            </tr>
+            <tr>
+                <td class="noidung">Lớp</td>
+                <td>
+                    <select>
+                        <option selected> - Chọn lớp - </option>
+                        <option>12a </option>
+                        <option>12b </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="noidung">Email</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td class="noidung">Điện thoại</td>
+                <td>
+                    <input type="number" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                <td>
+                    <input type="button" name="btnDangky" value="Đăng ký">
+                    <input type="button" name="btnNhaplai" value="Nhập lại">
+                </td>
+                </th>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
