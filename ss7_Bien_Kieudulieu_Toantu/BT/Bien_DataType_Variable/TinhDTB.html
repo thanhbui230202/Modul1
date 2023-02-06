@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Nhập điểm Lý</td>
+        <td><input type="text" id="ly"></td>
+    </tr>
+    <tr>
+        <td>Nhập điểm Hóa</td>
+        <td><input type="text" id="hoa"></td>
+    </tr>
+    <tr>
+        <td>Nhập điểm Sinh</td>
+        <td><input type="text" id="sinh"></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="TinhDTB();">Tính</button></td>
+    </tr>
+    <tr>
+        <td>Điểm trung bình là:</td>
+        <td><input type="text" id="dtb"></td>
+    </tr>
+</table>
+<!--<span>Nhập điểm Lý</span>-->
+<!--<input type="text" id="ly"><br>-->
+<!--<span>Nhập điểm Hóa</span>-->
+<!--<input type="text" id="hoa"><br>-->
+<!--<span>Nhập điểm Sinh</span>-->
+<!--<input type="text" id="sinh"><br>-->
+<!--<button type="button" onclick="TinhDTB();">Tính</button><br>-->
+<!--<span>Điểm trung bình</span>-->
+<!--<input type="text" id="dtb"><br>-->
+<script>
+    function TinhDTB() {
+        let Ly   = Number(document.getElementById('ly').value);
+        let Hoa   = Number(document.getElementById('hoa').value);
+        let Sinh   = Number(document.getElementById('sinh').value);
+        let TinhDTb = (Ly+Hoa+Sinh)/3;
+         document.getElementById('dtb').value = TinhDTb;
+    }
+</script>
+</body>
+</html>

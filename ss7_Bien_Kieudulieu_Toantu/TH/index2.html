@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="in">
+<button onclick="doSth()" >Click me!</button>
+<p id="out"></p>
+<!--<input id="out2">-->
+<script>
+    function doSth() {
+        let name = document.getElementById("in").value;
+
+        //value sử dụng cho ô input
+        // document.getElementById("out2").value = name;
+        document.getElementById("out").innerText = "Giá trị: " + name + ". Kiểu dữ liệu: " + typeof name;
+
+        //inner text + inner html sử dụng cho thẻ <p> hoặc <span>
+        // document.getElementById("out").innerText = "<p style='color: red'>"+ name+ "</p>";
+        // document.getElementById("out").innerHTML = "<p style='color: red'>"+ name+ "</p>";
+    }
+    // let className = '\'A1222I1\'';
+    // document.write("Tên lớp: " + className + ". Kiểu dữ liệu: " + typeof className);
+    // let check = confirm("bạn có chắc chắn....");
+    // document.write("Giá trị: " + check + ". Kiểu dữ liệu: " + typeof check);
+    // let number = +prompt("Nhập vào 1 số bất kỳ: ");
+    // document.write("Giá trị: " + number + ". Kiểu dữ liệu: " + typeof  number);
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .sele{
+        width: 150px;
+    }
+    td{
+        text-align: center;
+    }
+    button{
+        background: mediumpurple;
+        color: white;
+    }
+    #result{
+        color: cornflowerblue;
+        text-align: left;
+    }
+</style>
+<body>
+<table>
+    <tr>
+        <td>Amount</td>
+        <td>From Currency</td>
+        <td>To Currency</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="tien"></td>
+        <td>
+            <select class="sele">
+            <option>VietNam</option>
+            </select>
+        </td>
+        <td>
+            <select class="sele">
+                <option>USD</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" onclick="tinh();">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td id="result">Result: </td>
+    </tr>
+</table>
+<script>
+    function tinh() {
+        vnd = 23.450;
+        let Tien = Number(document.getElementById('tien').value);
+        let Convert = Tien * vnd;
+        document.getElementById('result').innerHTML +=Convert +="VNĐ";
+    }
+</script>
+</body>
+</html>

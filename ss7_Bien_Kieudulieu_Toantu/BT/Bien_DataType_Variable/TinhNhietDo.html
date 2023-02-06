@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Độ C:</td>
+        <td><input type="text" id="doC"></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="tinh();">Tính</button></td>
+    </tr>
+    <tr>
+        <td>Độ F:</td>
+        <td><input type="text" id="doF"></td>
+    </tr>
+</table>
+<script>
+    function tinh() {
+        let doC = Number(document.getElementById('doC').value);
+        let tinhDoF =  ((9/5)*doC)+32;
+        document.getElementById('doF').value = tinhDoF;
+    }
+</script>
+</body>
+</html>

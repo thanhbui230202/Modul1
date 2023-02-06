@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+<input type="text" id="age" value="99" placeholder="nhap tuoi cua ban">
+<button onmouseout="alert('GoodBye!')" onmouseover="alert('Hello!')">Click Me!</button>
+<script src="../../../Lý%20thuyết/ss6_javascript_overview/demo.js"></script>
+<script>
+    // Các cách nhận input
+    // Cách 1
+    let input = prompt("Nhập tên của bạn: ");
+    // Cách 2
+    let check = confirm("Do you know me?");
+    // Cách 3
+    let age = document.getElementById("age").value;
+
+
+    // Các cách để xuất output
+    // Cách 1
+    console.log(input);
+    // Cách 2
+    document.write(check);
+    // cách 3
+    alert("Tuổi của bạn là " + age);
+
+
+    // hướng dẫn debug
+    let a = prompt("Nhập số bất kỳ: ");
+    let b = a * a * a;
+    debugger
+    a = a * a * a;
+    b = a * a * a;
+    console.log(b);
+
+</script>
+</body>
+</html>

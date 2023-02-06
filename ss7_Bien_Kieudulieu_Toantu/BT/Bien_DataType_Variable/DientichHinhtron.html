@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Nhập bán kính:</td>
+        <td><input type="text" id="bk"></td>
+    </tr>
+    <tr>
+        <td>Nhập đường kính:</td>
+        <td><input type="text" id="dk"></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="tinh();">Tính</button></td>
+    </tr>
+    <tr>
+        <td>Diện tích hình tròn:</td>
+        <td><input type="text" id="s"></td>
+    </tr>
+    <tr>
+        <td>Chu vi hình tròn:</td>
+        <td><input type="text" id="c"></td>
+    </tr>
+</table>
+<script>
+    function tinh() {
+        const pi = 3.14;
+        let R = Number(document.getElementById('bk').value);
+        let D = Number(document.getElementById('bk').value);
+        let S = pi*R*R;
+        let C = pi*D;
+        document.getElementById('s').value = S;
+        document.getElementById('c').value = C;
+    }
+</script>
+</body>
+</html>

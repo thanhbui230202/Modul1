@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Overview</title>
+</head>
+<button onclick="showImg()">Show</button>
+<button onclick="hideImg()">Hide</button>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg"
+     alt="" width="500" height="500" id="imgEich">
+<body>
+<script>
+    let img = document.getElementById("imgEich");
+
+    function showImg() {
+        img.style.display = "block";
+    }
+
+    function hideImg() {
+        img.style.display = "none";
+    }
+</script>
+<script src="../../../Lý%20thuyết/ss6_javascript_overview/demo.js"></script>
+</body>
+</html>
