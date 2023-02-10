@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thunhap = +prompt("Nhập tiền lương của bạn");
+    let luong;
+    if (thunhap < 4){
+        luong =thunhap;
+
+    }else if (thunhap >4 && thunhap <=7){
+        luong = thunhap * 0.1;
+
+    }else if (thunhap >7 && thunhap <=15){
+        luong = thunhap * 0.2;
+
+    }else {
+        luong = thunhap * 0.3;
+
+    }
+    document.write("lương sau thuế của bạn là:"+" "+luong);
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào số a");
+    let b = +prompt("Nhập vào số b");
+    let c = +prompt("Nhập vào số c");
+    let denta = (b*b)-(4*a*c);
+    let x1,x2;
+    if (a != 0){
+        if (denta < 0){
+            document.write("Phương trình vô nghiệm");
+        }else if (denta == 0){
+            x1 = x2 = -b/(2*a);
+            document.write("Phương trình có 2 nghiệm kép là:" +" "+x1+"và"+x2*-1);
+        }else {
+            x1 = (-b+Math.sqrt(denta))/(2*a);
+            x2 = (-b-Math.sqrt(denta))/(2*a);
+            document.write("Phương trình có 2 nghiệm phân biệt:"+" "+ x1 +"và" +x2);
+        }
+    }else {
+        document.write("a phải là số dương");
+    }
+</script>
+</body>
+</html>

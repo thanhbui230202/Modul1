@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sodien = +prompt("Nhập vào chỉ số điện");
+    let tien;
+    if (sodien <= 100){
+        tien = sodien*600;
+    }else if (sodien >100 && sodien<= 150){
+        tien = sodien*700;
+    }else if (sodien > 150 && sodien <200){
+        tien = sodien*900
+    }else {
+        tien = sodien*1100;
+    }
+    document.write("Số tiền điện phải trả là:"+" "+tien +"VNĐ");
+</script>
+</body>
+</html>
