@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="choi()">Chơi</button>
+
+<script>
+    function choi() {
+        let a = +prompt("Nhập vào số 1 ");
+        let b = +prompt("Nhập vào số 2 ");
+        let ran = Math.floor(Math.random() *(b-a)) + a;
+        console.log(ran);
+        let c = +prompt("Nhập vào số muốn đoán");
+        for (let i =1 ; i <=3;i++){
+            if (ran == c){
+                document.write("Chúc mừng");
+                break;
+            }else if (ran > c || ran < c){
+                c = +prompt("Nhập lại số muốn đoán");
+            }
+        }
+    }
+</script>
+</body>
+</html>

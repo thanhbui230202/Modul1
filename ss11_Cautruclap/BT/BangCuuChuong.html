@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let bang;
+    bang = "<table border='1' width='300' cellspacing='10' cellpadding='10'>"
+    for (i =1; i<=9;i++){
+        bang += "<tr>";
+        for (j =2; j<=9;j++){
+            bang = bang + "<td>" +j +"x"+i+"="+i*j +"</td>"
+        }
+        bang = bang + "</tr>";
+    }
+    // for(var i = 1 ; i <= 9; i++){
+    //     var so = 2*i;
+    //     document.write("2x"+i+"="+so);
+    // }
+    bang = bang + "</table>";
+    document.write(bang);
+</script>
 </body>
 </html>

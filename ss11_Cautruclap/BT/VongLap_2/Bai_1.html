@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num =  +prompt("Nhập số lượng số fibo cần hiển thị");
+    let count = 1;
+    while (count <= num){
+        document.write(fib(count)+" ");
+        count++;
+    }
+    function fib(n) {
+        if (n == 1 || n == 2) {
+            return 1;
+        } else {
+            return fib(n - 1) + fib(n - 2);
+        }
+    }
+</script>
+</body>
+</html>

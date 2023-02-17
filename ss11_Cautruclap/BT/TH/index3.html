@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    /*Cho người dùng nhập vào 1 số
+    * Nếu số đó lớn hơn 10 thì bắt nhập lại
+    * Nếu không thì hiển thị ra số vừa nhập*/
+
+    let num;
+    do {
+        num = +prompt("nhập vào 1 số: ");
+        if(num > 10){
+            alert("Vui lòng nhập số bé hơn 10");
+        }else {
+            document.write(num);
+        }
+    } while (num > 10);
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thunhap = +prompt("Nhập tiền lương của bạn");
+    let luong,thue;
+    if (thunhap < 7000000){
+        thue =thunhap*0.05;
+    }else if (thunhap >7000000 && thunhap <=15000000){
+        thue = thunhap * 0.1;
+
+    }else {
+        thue = thunhap * 0.2;
+    }
+    luong = thunhap -thue;
+    document.write("thuế của bạn là:"+" "+thue.toFixed(3));
+    document.write("<br>");
+    document.write("lương ròng của bạn là:"+" "+luong.toFixed(3));
+
+</script>
+</body>
+</html>
