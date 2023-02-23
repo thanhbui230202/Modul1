@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let h = +prompt("Nhập chiều cao");
+    // for (let i = 1; i <=h;i++){
+    //     for (let j = 1; j <=i ; j++){
+    //         if (i %2 == 0){
+    //             document.write("&nbsp");
+    //         }else {
+    //             document.write("*");
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+
+    let h = +prompt("Nhập chiều cao");
+    let run=1;
+    for (let k = 2 ; k <=h;k++ ){
+        run+=2;
+    }
+    for(let i =1 ; i <= run; i+=2){
+        for (let j = run ; j >=1;j--) {
+            if (j <= i) {
+                document.write("*")
+            } else {
+                document.write("&nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

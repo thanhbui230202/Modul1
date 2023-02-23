@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="eng">
+<button type="button" onclick="dich()">Translate</button>
+<input type="text" id="vnam">
+<script>
+    let eng =["good","bad"];
+    let vn =["tốt","xấu"];
+   function dich() {
+       let word = document.getElementById('eng').value;
+        let index = eng.indexOf(word);
+        if (index !== -1){
+            document.getElementById('vnam').value = vn[index];
+        }else {
+            document.getElementById('vnam').value = "Không có giá trị"
+        }
+   }
+</script>
+</body>
+</html>
