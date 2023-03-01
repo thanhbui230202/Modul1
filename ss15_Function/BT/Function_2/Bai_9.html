@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s1= prompt(" nhập vào mảng kí tự");
+    let a =prompt("nhập vào 1 kí tự");
+    let s= [];
+
+    function kiemtraKiTU(array,n) {
+        let count = 0 ;
+        for (let i = 0; i <array.length ; i++) {
+            s[i]=array.slice(i,i+1);
+            if(s[i] === n ){
+                count ++;
+            }
+        }
+        return count;
+        if(count ===0){
+            return -1;
+        }
+    }
+    alert("số kí tự trong mảng "+kiemtraKiTU(s1,a));
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+<p>Nhập tên cầu thủ</p>
+<input type="text" id="cauthu">
+<button type="button" onclick="Array()">Search</button>
+<input type="text" id="chomsao">
+<script>
+    let arr1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let arr2 = ["UrsaMinor","Tarurus","Cygnus","Lyra","Aquila","UrsaMajor","Leo"];
+    function Array() {
+        let word = document.getElementById('cauthu').value;
+        let index = arr1.indexOf(word);
+        if (index !== -1){
+            document.getElementById('chomsao').value = arr2[index];
+        }else {
+            document.getElementById('chomsao').value = "Không có giá trị"
+        }
+    }
+
+</script>
+</body>
+</html>
