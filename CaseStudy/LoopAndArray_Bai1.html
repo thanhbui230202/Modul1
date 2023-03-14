@@ -6,10 +6,13 @@
 </head>
 <body>
 <script>
-    let a = [1,3,6]
+    let a = [1,2,3];
     let b = [];
-    for (let i = 0;i < a.length;i++){
-        b
+    n = a.length;
+    let sum = 0;
+    for (let i = 0 ;i < n; i++){
+        sum += a[i];
+        b[i] = sum;
     }
     document.write(b);
 </script>

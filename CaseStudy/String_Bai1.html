@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập vào 1 chuỗi");
+    let b = a.split(" ")
+    for (let i = 0; i < b.length;i++){
+        if (b[i]=== ""){
+            b.splice(i,1)
+            i--;
+        }
+    }
+    for (let j = 0;j < b.length;j++){
+        b[j]= b[j].charAt(0).toUpperCase()+b[j].substring(1).toLowerCase();
+    }
+    console.log(b)
+</script>
+</body>
+</html>

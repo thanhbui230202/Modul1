@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhietdo= +prompt("Nhập vào nhiệt độ C");
+    class Temperature{
+        constructor(Celcius) {
+            this.Celcius = Celcius;
+        }
+        getFahrenheit(){
+            return (1.8*this.Celcius)+32;
+        }
+        getKenvin(){
+            return this.Celcius+273.15;
+        }
+        setCelcius(){
+            this.Celcius = nhietdo;
+        }
+    }
+    let temperature = new Temperature();
+    temperature.getFahrenheit();
+    temperature.getKenvin();
+    temperature.setCelcius(nhietdo);
+    document.write("Độ F:"+temperature.getFahrenheit()+" "+"Độ K:"+temperature.getKenvin());
+</script>
+</body>
+</html>

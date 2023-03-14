@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [5,2,5]
+    let b = [6,3,4]
+    let max =a[0]/b[0];
+    for (let i = 0 ; i < a.length ;i++){
+        if (a[i]/b[i] > max){
+            max = a[i]/b[i];
+            index = i;
+        }
+    }
+    document.write("Số lớn nhất là: "+ a[index]+"/"+b[index] +"at position"+index);
+</script>
+</body>
+</html>

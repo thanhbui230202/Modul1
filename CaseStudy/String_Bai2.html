@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập vào 1 chuỗi");
+    console.log(a);
+    let count =0,equal;
+    for (let i =0 ; i< a.length;i++){
+        equal = false;
+        for (let j = 0; j <i; j++){
+            if (a[i] == a[j]){
+                equal = true;
+                break;
+            }
+        }
+        if (equal == false){
+            count++;
+        }
+    }
+    console.log(count);
+</script>
+</body>
+</html>

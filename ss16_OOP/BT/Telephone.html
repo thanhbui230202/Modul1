@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Telephone{
+        constructor(pin,trangthai) {
+            this.pin = pin;
+            this.trangthai = trangthai;
+            this.inbox = [];
+        }
+        getPin(){
+            return this.pin;
+        }
+        SendMessage(who){
+            let message = prompt("Hãy Nhập tin nhắn");
+            who.getMessage(message);
+        }
+        getMessage(message){
+            this.inbox.push(message);
+            alert("Bạn có tin nhắn mới");
+        }
+        ReadMessage(){
+            console.log("Bạn có " +this.inbox.length+" tin nhắn");
+            console.log(this.inbox);
+        }
+        getTrangthai(){
+            if (this.trangthai == true){
+                console.log("Điện thoại đang bật");
+            }else {
+                console.log("Điện thoại đang tắt");
+            }
+        }
+        Battery(){
+            this.pin --;
+        }
+        Sac(){
+            while (this.pin<100){
+                this.pin++;
+            }
+        }
+    }
+    let iphone = new Telephone(100,true);
+    let nokia = new Telephone(100,true);
+    console.log(iphone.getPin());
+    iphone.SendMessage(nokia);
+    iphone.SendMessage(nokia);
+    iphone.SendMessage(nokia);
+    iphone.getTrangthai(iphone);
+    nokia.ReadMessage();
+    nokia.Battery();
+    nokia.Sac();
+</script>
+</body>
+</html>

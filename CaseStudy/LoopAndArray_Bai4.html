@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="menu">
+
+</div>
+<button type="button"name="btnchoose" onclick="menu()">click me for your choose</button>
+<script>
+    let a = ["1.Cafe" +"<br>2.Cam vắt" +"<br>3.Nước ép cà rốt" +"<br>4.Nước ép cà chua" +"<br>5.Nước lọc" +"<br>6.Nước dừa" +"<br>7.Thoát" +"<br>"];
+    document.getElementById('menu').innerHTML = a;
+    function menu (){
+        let n;
+        let soluong;
+        let dongia;
+        let tongtien = 0;
+        do {
+            n = +prompt("Nhập vào số bạn muốn chọn");
+            switch (n) {
+                case 1:
+                    dongia = 15;
+                    soluong = prompt("Nhập vào số lượng bạn muốn mua");
+                    tongtien = dongia * soluong;
+                    alert("Giá tiền bạn phải trả "+tongtien);
+                    break;
+                case 2:
+                    dongia = 25;
+                    soluong = prompt("Nhập vào số lượng bạn muốn mua");
+                    tongtien = dongia * soluong;
+                    alert("Giá tiền bạn phải trả "+tongtien);
+                    break;
+                case 3:
+                    dongia = 35;
+                    soluong = prompt("Nhập vào số lượng bạn muốn mua");
+                    tongtien = dongia * soluong;
+                    alert("Giá tiền bạn phải trả "+tongtien);
+                    break;
+                case 4:
+                    dongia = 45;
+                    soluong = prompt("Nhập vào số lượng bạn muốn mua");
+                    tongtien = dongia * soluong;
+                    alert("Giá tiền bạn phải trả "+tongtien);
+                    break;
+                case 5:
+                    dongia = 55;
+                    soluong = prompt("Nhập vào số lượng bạn muốn mua");
+                    tongtien = dongia * soluong;
+                    alert("Giá tiền bạn phải trả "+tongtien);
+                    break;
+                case 6:
+                    dongia = 65;
+                    soluong = prompt("Nhập vào số lượng bạn muốn mua");
+                    tongtien = dongia * soluong;
+                    alert("Giá tiền bạn phải trả "+tongtien);
+                    break;
+                case 7:
+                    alert("Bạn đã thoát");
+                    break;
+            }
+        }while (n <7)
+    }
+
+</script>
+</body>
+</html>

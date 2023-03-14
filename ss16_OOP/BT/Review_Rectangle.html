@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">;-->
+<div>
+
+</div>
+<script>
+    let chieudai = +prompt("Nhập chiều dài");
+    let chieurong = +prompt("Nhập chiều rộng");
+    // let c = document.getElementById("myCanvas");
+    // let ctx = c.getContext("2d");
+    // ctx.beginPath();
+    // ctx.rect(20, 20, chieudai, chieurong);
+    // ctx.stroke();
+    class  Rectangle{
+        constructor(length,width){
+            this.length = length;
+            this.width = width;
+        }
+        getDientich() {
+            return this.length*this.width;
+        }
+        getChuvi(){
+            return (this.length+this.width)/2;
+        }
+        setChieudai(chieudai){
+            this.length = chieudai;
+        }
+        setChieurong(chieurong){
+            this.width = chieurong;
+        }
+    }
+    let rectangle = new Rectangle();
+    rectangle.getDientich();
+    rectangle.getChuvi();
+    rectangle.setChieudai(chieudai);
+    rectangle.setChieurong(chieurong);
+    document.write("Diện tích:"+rectangle.getDientich()+".Chu vi:"+rectangle.getChuvi());
+</script>
+</body>
+</html>
